@@ -259,7 +259,6 @@ public class TerrainLoader : MonoBehaviour {
 
             try { setTextures(tile.terrain.GetComponent<Terrain>().terrainData); }catch{ }
 
-            tile.terrain.GetComponent<Terrain>().SetNeighbors(leftTerrain, topTerrain, rightTerrain, bottomTerrain);
         }
 
         yield return null;
